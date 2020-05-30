@@ -2,6 +2,10 @@
 
 const app = document.getElementById('root');
 
+const logo = document.createElement('img');
+logo.setAttribute("src", "images/logo.png")
+// logo.src = '../images/logo.png';
+
 var today = new Date();
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate(); 
 
@@ -40,6 +44,7 @@ container.setAttribute('class', 'container');
 app.appendChild(inputTask);
 app.appendChild(buttonAddTask);
 app.appendChild(container);
+app.appendChild(logo);
 
 
 
@@ -77,28 +82,3 @@ request.send();
 
 
 
-// -------------------------------add item to list------------
-
-// function addItem() {
-//   var newListItem = document.createElement("li");
-//   newListItem.className = "listitem";
-
-//   var input = document.querySelector("input");
-
-//   var text = document.createTextNode(input.value);
-//   newListItem.appendChild(text);
-
-//   var list = document.querySelector(".list");
-//   list.appendChild(newListItem);
-// }
-
-
-// <main class="container">
-//     <input class="submission-line__input" type="text" placeholder="Enter new item here...">
-//     <button onclick="addItem();" class="submission-line__btn">Add</button>
-//     <ul class="list">
-//       <li class="listitem">First</li>
-//       <li class="listitem">Second</li>
-//       <li class="listitem">Third</li>
-//     </ul>
-//   </main>
