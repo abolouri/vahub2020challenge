@@ -8,12 +8,22 @@ html {
   font-family: 'Dosis', sans-serif;
   line-height: 1.6;
   color: #666;
-  background: #F6F6F6;
+  background: #C4D4C6;
 }
 
 header {
   max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header {
+  height: 10%;
+  width: 33.33%;
+  align-items: center;
+}
+.headerDate {
   display: flex;
   flex-direction: column;
 }
@@ -27,7 +37,12 @@ header {
   font-weight: bold;
   margin-top: 20px;
 }
-
+img {
+  height: 100px;
+  width: 100px;
+  margin-top: 40px;
+  margin-left: 120px;
+}
 
 #root {
   max-width: 1000px;
@@ -40,17 +55,16 @@ h1 {
   text-align: left;
   padding: 1rem 2rem;
   /* background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%); */
-  background-color: wheat;
+  background-color: #FFAF40;
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
   color: white;
 }
-
-img {
-  display: block;
-  margin: 1rem auto;
-  max-width: 100%;
+h2 {
+  color: black;
+  text-align:right
 }
+
 
 p {
   padding: 0 2.5rem 2.5rem;

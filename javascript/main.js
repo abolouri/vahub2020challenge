@@ -1,10 +1,13 @@
 
 
+
+
+
 const app = document.getElementById('root');
 
-const logo = document.createElement('img');
-logo.setAttribute("src", "images/logo.png")
-// logo.src = '../images/logo.png';
+// const logo = document.createElement('img');
+// logo.setAttribute("src", "images/logo.png")
+
 
 var today = new Date();
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate(); 
@@ -44,7 +47,7 @@ container.setAttribute('class', 'container');
 app.appendChild(inputTask);
 app.appendChild(buttonAddTask);
 app.appendChild(container);
-app.appendChild(logo);
+// app.appendChild(logo);
 
 
 
@@ -63,11 +66,18 @@ request.onload = function () {
       const h1 = document.createElement('h1');
       h1.textContent = task.title;
 
+      const h2 = document.createElement('h2');
+      h2.setAttribute('class', 'dispalywatch')
+      h2.textContent = `00:00:00`;
+
       const p = document.createElement('p');
       p.textContent = task.time_logged;
 
+
+
       container.appendChild(card);
       card.appendChild(h1);
+      card.appendChild(h2);
       card.appendChild(p);
     });
   } else {
