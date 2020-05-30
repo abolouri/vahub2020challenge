@@ -14,6 +14,8 @@ html {
 #root {
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -38,6 +40,7 @@ p {
 
 .container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -55,6 +58,39 @@ p {
   transform: translate3D(0, -2px, 0);
 }
 
+
+
+input[type=text] {
+  font-size: 2rem;
+  margin: 1rem;
+  background-color: aliceblue;
+  border-radius: 12px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: flex;
+}
+
+.addButton {
+  align-self: center;
+  background-color:whitesmoke;
+  border-radius: 50%;
+  height: 5em;
+  width: 5em;
+  border: 1px solid black;
+  color: black;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+
 @media screen and (min-width: 600px) {
   .card {
     flex: 1 1 calc(50% - 2rem);
@@ -67,13 +103,3 @@ p {
   }
 }
 
-.card:nth-child(2n) h1 {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-}
-
-.card:nth-child(4n) h1 {
-  background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
-}
-
-.card:nth-child(5n) h1 {
-  background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
