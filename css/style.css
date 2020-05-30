@@ -40,7 +40,7 @@ h1 {
   text-align: center;
   padding: 1.5rem 2.5rem;
   /* background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%); */
-  background-color:#8E8E93;
+  background-color: wheat;
   margin: 0 0 2rem 0;
   font-size: 1.5rem;
   color: white;
@@ -67,7 +67,7 @@ p {
   margin: 1rem;
   background: white;
   box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
-  /* border-radius: 12px; */
+  border-radius: 12px;
   overflow: hidden;
   transition: all .2s linear;
 }
@@ -83,7 +83,7 @@ input[type=text] {
   font-size: 1rem;
   margin: 1rem;
   background-color: #EFEFF4;
-  /* border-radius: 12px; */
+  border-radius: 12px;
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -94,7 +94,7 @@ input[type=text] {
 .addButton {
   align-self: center;
   background-color: transparent;
-  /* border-radius: 50%; */
+  border-radius: 50%;
   height: 1em;
   width: 1em;
   /* border: 1px solid black; */
