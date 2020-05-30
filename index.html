@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Time Tracking App</title>
-  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <!-- <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet"> -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -28,6 +28,19 @@
   <div id="root"></div>
 
   <script src="javascript/main.js"></script>
+
+  <div id="timerContainer">
+    <div class="timer" onclick="startTimer()">00:00:00</div>
+    <div id="addtaskbtn" class="startTimer reset" onclick="startTimer()" >
+      <i class="fas fa-play"></i>
+    </div>
+    <div id="addtaskbtn" class="pauseTimer reset" onclick="pauseTimer()" >
+      <i class="fas fa-pause"></i>
+    </div>
+    <div id="addtaskbtn" class="resetTimer reset" onclick="resetTimer()">Complete</div>
+  </div>
+  <script type="text/javascript" src="javascript/stopwatch.js"></script>
+
 </body>
 
 </html>

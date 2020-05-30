@@ -59,6 +59,8 @@ request.onload = function () {
       h2.setAttribute('class', 'dispalywatch')
       h2.textContent = new Date(task.time_logged * 1000).toISOString().substr(11, 8);
       
+      const stopWatch = document.getElementById('timerContainer');
+
       const buttonStart = document.createElement('button');
       buttonStart.setAttribute('class', 'startButton');
       buttonStart.setAttribute('id', 'addtaskbtn');
@@ -77,6 +79,7 @@ request.onload = function () {
       container.appendChild(card);
       card.appendChild(h1);
       card.appendChild(h2);
+      card.appendChild(stopWatch);
       card.appendChild(buttonStart);
       card.appendChild(buttonStop);
       card.appendChild(buttonComplete);

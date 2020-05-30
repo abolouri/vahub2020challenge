@@ -123,6 +123,36 @@ input[type=text] {
   cursor: pointer; 
 }
 
+#timerContainer {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  width:700px;
+  margin:20px auto;
+  min-height: 60px;
+  border-top:0px;
+}
+.timer, .reset {
+  float:left;
+  width: 54%;
+  padding: 20px 0;
+  font-size: 24px;
+  text-align:center;
+  color: #fff;
+  background: #A90000;
+  cursor: pointer
+}
+.reset {
+  background: #550000;
+  color: white;
+  width:14.9%;
+  border-left: 1px solid #990000;
+}
+.reset:hover {
+  background: #CC0000;
+}
+.lighter {
+  background: #CC0000
+}
 
 
 
@@ -148,6 +178,39 @@ header {
   font-weight: bold;
   margin-top: 10px;
 }
+header {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header {
+  height: 10%;
+  width: 33.33%;
+  align-items: center;
+}
+.headerDate {
+  display: flex;
+  flex-direction: column;
+}
+.today {
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: -20px;
+}
+#currentDate {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+img {
+  height: 100px;
+  width: 100px;
+  margin-top: 40px;
+  margin-left: 120px;
+}
+
 }
 @media screen and (max-width: 900px) {
   .card {
