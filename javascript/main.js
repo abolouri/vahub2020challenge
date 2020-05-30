@@ -10,12 +10,12 @@ document.getElementById("currentDate").innerHTML = date;
 
 const inputTask = document.createElement('input');
 inputTask.setAttribute("type", "text");
-inputTask.setAttribute("placeholder", "task name");
+inputTask.setAttribute("placeholder", "Add new task");
 
 const buttonAddTask = document.createElement('button');
 buttonAddTask.setAttribute('class', 'addButton');
 buttonAddTask.setAttribute('id', 'addtaskbtn');
-buttonAddTask.textContent = `add`;
+buttonAddTask.textContent = `+`;
 buttonAddTask.setAttribute('onClick', 'addTask();');
 
     function addTask() {
