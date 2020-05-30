@@ -65,12 +65,12 @@ request.onload = function () {
       buttonStart.textContent = `START`;
 
       const buttonStop = document.createElement('button');
-      buttonStop.setAttribute('class', 'startButton');
+      buttonStop.setAttribute('class', 'stopButton');
       buttonStop.setAttribute('id', 'addtaskbtn');
       buttonStop.textContent = `STOP`;
 
       const buttonComplete = document.createElement('button');
-      buttonComplete.setAttribute('class', 'startButton');
+      buttonComplete.setAttribute('class', 'completeButton');
       buttonComplete.setAttribute('id', 'addtaskbtn');
       buttonComplete.textContent = `COMPLETE`;
 
