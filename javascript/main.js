@@ -1,12 +1,6 @@
 
 
-
-
-
 const app = document.getElementById('root');
-
-// const logo = document.createElement('img');
-// logo.setAttribute("src", "images/logo.png")
 
 
 var today = new Date();
@@ -63,17 +57,29 @@ request.onload = function () {
 
       const h2 = document.createElement('h2');
       h2.setAttribute('class', 'dispalywatch')
-      h2.textContent = `00:00:00`;
+      h2.textContent = new Date(task.time_logged * 1000).toISOString().substr(11, 8);
+      
+      const buttonStart = document.createElement('button');
+      buttonStart.setAttribute('class', 'startButton');
+      buttonStart.setAttribute('id', 'addtaskbtn');
+      buttonStart.textContent = `START`;
 
-      const p = document.createElement('p');
-      p.textContent = task.time_logged;
+      const buttonStop = document.createElement('button');
+      buttonStop.setAttribute('class', 'startButton');
+      buttonStop.setAttribute('id', 'addtaskbtn');
+      buttonStop.textContent = `STOP`;
 
-
+      const buttonComplete = document.createElement('button');
+      buttonComplete.setAttribute('class', 'startButton');
+      buttonComplete.setAttribute('id', 'addtaskbtn');
+      buttonComplete.textContent = `COMPLETE`;
 
       container.appendChild(card);
       card.appendChild(h1);
       card.appendChild(h2);
-      card.appendChild(p);
+      card.appendChild(buttonStart);
+      card.appendChild(buttonStop);
+      card.appendChild(buttonComplete);
     });
   } else {
     const errorMessage = document.createElement('marquee');
