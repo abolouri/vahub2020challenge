@@ -153,14 +153,93 @@ input[type=text] {
   cursor: pointer; 
 }
 
+/*sign up page*/
 
+.signUpConatainer {
+  background-color: #E9EFEA;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 800px;
+}
+.h1h2-signup {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1000px;
+}
+.signupH1 {
+  font-size: 40px;
+  align-self: center;
+}
+.signupH2 {
+  font-size: 20px;
+  align-self: center;
+}
+.joinvia {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1000px;
+}
+.fcbjoin {
+  width: 550px;
+}
+.googlejoin {
+  width: 550px;
+}
+.form-name {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+}
+.form-email {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;}
+#name-field {
+  font-size: 15px;
+}
+#email {
+  font-size: 15px;
+}
 
-
+input[type=password] {
+  font-size: 2rem;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 12px;
+  max-width: 1000px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: flex;
+  margin: 1rem;
+}
+#password {
+  font-size: 15px;
+}
+#label-pass {
+  margin-left: 30px;
+  margin-bottom: -10px;
+  margin-top: -10px;
+}
+.signupbutton {
+  font-size: 20px;
+  width: 300px;
+  align-self: center;
+  border-radius: 12px;
+  background-color: #FFAF40;
+}
 
 @media screen and (max-width: 600px) {
-  .card {
-    flex: 1 1 calc(50% - 2rem);
-  }
+.card {
+  flex: 1 1 calc(50% - 2rem);
+}
 
 
 header {
