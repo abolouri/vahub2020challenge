@@ -235,6 +235,15 @@ input[type=password] {
   border-radius: 12px;
   background-color: #FFAF40;
 }
+.button-to-functionalities {
+  font-size: 20px;
+  width: 300px;
+  align-self: center;
+  border-radius: 12px;
+  background-color: #FFAF40;
+  align-self: center;
+  margin-left: 600px;
+}
 
 @media screen and (max-width: 600px) {
 .card {
