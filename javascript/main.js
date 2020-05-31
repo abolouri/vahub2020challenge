@@ -4,7 +4,6 @@ const app = document.getElementById('root');
 
 
 var today = new Date();
-// var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate(); 
 var date = today.getDate()+' / '+(today.getMonth()+1)+' / '+today.getFullYear(); 
 
 
@@ -29,7 +28,6 @@ function addTask() {
   saveTask.setRequestHeader("Content-Type", "application/json");
   console.log(payload);
   saveTask.send(payload);
-  // reload page after adding a new task to show all available tasks
   saveTask.onload = function () {
     window.location.reload(true);
   }
@@ -41,7 +39,6 @@ container.setAttribute('class', 'container');
 app.appendChild(inputTask);
 app.appendChild(buttonAddTask);
 app.appendChild(container);
-// app.appendChild(logo);
 
 var request = new XMLHttpRequest();
 request.open('GET', 'https://va2020concept.cf/api/v1/tasks', true);
@@ -61,7 +58,6 @@ request.onload = function () {
       h2.setAttribute('class', 'dispalywatch')
       h2.textContent = new Date(task.time_logged * 1000).toISOString().substr(11, 8);
       
-      // const stopWatch = document.getElementById('timerContainer');
 
       const buttonStart = document.createElement('button');
       buttonStart.setAttribute('class', 'startButton');
