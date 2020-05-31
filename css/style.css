@@ -204,44 +204,38 @@ header {
 .today {
   font-size: 20px;
   font-weight: bold;
-  margin-top: -30px;
 }
 #currentDate {
   font-size: 15px;
   font-weight: bold;
   margin-top: 10px;
 }
-header {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 .header {
   height: 10%;
-  width: 33.33%;
+  width: 100%;
   align-items: center;
-}
-.headerDate {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-direction: row;
 }
-.today {
-  font-size: 35px;
-  font-weight: bold;
-  margin-top: -20px;
+/* .headerDate {
+  display: flex;
+  flex-direction: row;
+} */
+.header-empty {
+  display: none;
+}
 }
 #currentDate {
   font-size: 20px;
   font-weight: bold;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 img {
-  height: 100px;
-  width: 100px;
-  margin-top: 40px;
-  margin-left: 120px;
+  height: 50px;
+  width: 50px;
+  /* margin-top: 4px;
+  margin-left: 120px; */
 }
 
 }
