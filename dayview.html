@@ -20,6 +20,9 @@
     <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
     <style>
 
+        body {
+            background-color:#E9EFEA;
+        }
         .btn-orangehighlight{
             background-color:#FF9500;border-color: #FF9500; !important;
         }
@@ -86,8 +89,10 @@
     <p style="text-align: left; color: rgb(104, 104, 104);">31 May 2020<br></p>
     <h1 class="display-4" style="text-align: left; text-decoration-line: underline;">Today</h1>
     <br><br>
+    <div class="form-group" style=""><label style="display:none;">Text</label><input type="text" class="form-control" id="newtasktitle"></div>
 
-    <button type="button" class="btn btn-orangehighlight" style="width: 80%;"><i class="fa fa-plus"></i> Add new task</button>
+
+    <button id="addnewtask" type="button" class="btn btn-orangehighlight" style="width: 80%;"><i class="fa fa-plus"></i> Add new task</button>
     <div class="container" style="">
         <!--<div class="m-5"><ul class="list-group" style="">
     <li class="list-group-item">
