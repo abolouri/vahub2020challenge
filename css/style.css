@@ -30,7 +30,7 @@ header {
 .today {
   font-size: 35px;
   font-weight: bold;
-  margin-top: -20px;
+  margin-top: -40px;
 }
 #currentDate {
   font-size: 20px;
@@ -54,15 +54,15 @@ img {
 h1 {
   text-align: left;
   padding: 1rem 2rem;
-  /* background-color: #FFAF40; */
-  /* margin: 0 0 1rem 0; */
   font-size: 1.5rem;
   color: #09222C;
 }
 h2 {
   color: black;
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
+  margin-top: -30px;
+  margin-bottom: -10px;
 }
 
 
